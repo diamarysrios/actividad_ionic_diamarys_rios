@@ -25,6 +25,18 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+ion-content.background{
+    --background: url(/assets/fondo.webp) 0 0/100% 100% no-repeat;
+}
+
 .text-align-center {
     text-align: center;
+}
+
+.col-tarjeta-diama {
+    max-width: 750px;
+}
+
+.img-redondeada {
+    border-radius: 5px;
 }
