@@ -3,10 +3,12 @@
 ## Actividad II Información de Contacto IONIC - Diamarys Rios V-20.589.352 
 ### Sección 1 Trayecto III
 
-En esta actividad actualizada en la pestaña de "Información de Contacto" con IONIC, luego de realizar las diversar validaciones, en la pestaña `tabs3`. Para esto se modificó el html de dicho componente para hacer uso de los formularios reactivos y así agregar las validaciones necesarias.
+En esta actividad actualizada en la pestaña de "Información de Contacto" con IONIC, luego de realizar las diversar validaciones, en la pestaña `tabs3`. Para esto se modificó el html de dicho componente para hacer uso de los formularios reactivos y así agregar las validaciones necesarias. La documentación completa y actualizada con esta actividad se encuentra en [este enlace](./Documentaci%C3%B3n.md))
 
-### tab3/tab3.page.html
+### [tab3/tab3.page.html](/src/app/tab3/tab3.page.html)
 ```html
+. . .
+
 <form [formGroup]='form' (ngSubmit)="Enviar()">
 
     <ion-list>
@@ -75,9 +77,11 @@ En esta actividad actualizada en la pestaña de "Información de Contacto" con I
     <ion-button type="submit" fill="outline">Enviar</ion-button>
 
 </form>
+
+. . .
 ```
 
-### tab3/module.ts
+### [tab3/module.ts](/src/app/tab3/tab3.module.ts)
 Luego importé y registré los módulos FormsModule, ReactiveFormsModule
 
 ```ts
@@ -103,7 +107,7 @@ import { Tab3PageRoutingModule } from './tab3-routing.module';
 export class Tab3PageModule {}
 ```
 
-### tab3/tab3.page.ts
+### [tab3/tab3.page.ts](/src/app/tab3/tab3.page.ts)
 Luego implementé la validación de formulario reactivo en Ionic. Por lo tanto, actualicé el código en el archivo tab3.page.ts necesario para que el formulario sea validado y procesado. De momento como muestra se abre una ventana de alerta mostrando los elementos del formulario además de mostrar mensajes de log en la consola del navegador para demostrar que el formulario está funcionando pero de momento no está conectado a un backend.
 
 ```ts
@@ -143,6 +147,3 @@ export class Tab3Page implements OnInit {
 
   constructor() { }
 ```
-
-# Documentacíon
-[En este enlace está la documentación completa](./Documentaci%C3%B3n.md)

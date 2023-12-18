@@ -3,7 +3,7 @@
 # Rutas
 El sistema posee 4 rutas, siendo la "barra" una redirección al inicio.
 
-Parte del [archivo](https://github.com/diamarysrios/actividad_ionic_diamarys_rios/blob/master/src/app/tabs/tabs-routing.module.ts) con el módulo de enrutamiento es este:
+Parte del [archivo](/src/app/tabs/tabs-routing.module.ts) con el módulo de enrutamiento es este:
 
 ```javascript
 const routes: Routes = [
@@ -36,16 +36,16 @@ Donde se evidencia que tengo las siguientes 4 rutas:
 
 | Ruta        | Componente          
 | ----------- |-------------
-| /    | [tab1](https://github.com/diamarysrios/actividad_ionic_diamarys_rios/tree/master/src/app/tab1)
-| /tabs/inicio | [tab1](https://github.com/diamarysrios/actividad_ionic_diamarys_rios/tree/master/src/app/tab1)
-| /tabs/informacion-personal | [tab2](https://github.com/diamarysrios/actividad_ionic_diamarys_rios/tree/master/src/app/tab2)
-| /tabs/contacto | [tab3](https://github.com/diamarysrios/actividad_ionic_diamarys_rios/tree/master/src/app/tab3)
+| /    | [tab1](/src/app/tab1)
+| /tabs/inicio | [tab1](/src/app/tab1)
+| /tabs/informacion-personal | [tab2](/src/app/tab2)
+| /tabs/contacto | [tab3](/src/app/tab3)
 
 # Componentes
 Como se evidencia en el enrutamiento, tengo 3 componentes, no tuve la necesidad de programar typescript, sólo hice el HTML y algo de CSS (o mejor dicho SASS) para cada uno.
 
 ### Sobre los estilos
-No configuré SASS para cada componente, me bastó crear algunas clases en el archivo [global.scss ](https://github.com/diamarysrios/actividad_ionic_diamarys_rios/blob/documentacion/src/global.scss), a continuación las líneas en cuestión:
+No configuré SASS para cada componente, me bastó crear algunas clases en el archivo [global.scss ](/src/global.scss), a continuación las líneas en cuestión:
 
 ```scss
 /* Imágen de fondo */
@@ -68,7 +68,7 @@ ion-content.background{
     border-radius: 5px;
 }
 ```
-### [Tab 1](https://github.com/diamarysrios/actividad_ionic_diamarys_rios/blob/documentacion/src/app/tab1/tab1.page.html)
+### [Tab 1](/src/app/tab1/)
 HTML con una imágen y algo de texto usando tarjetas para crear un punto de inicio para la aplicación.
 
 ```html
@@ -104,7 +104,7 @@ HTML con una imágen y algo de texto usando tarjetas para crear un punto de inic
 </ion-content>
 ```
 
-### [Tab2](https://github.com/diamarysrios/actividad_ionic_diamarys_rios/blob/documentacion/src/app/tab2/tab2.page.html)
+### [Tab2](/src/app/tab2/)
 En este componente volví a agregar otra imágen mía y volví a hacer uso de las tarjetas pero con diversos colores y el contenido de información personal deseado.
 
 ```html
@@ -178,10 +178,10 @@ En este componente volví a agregar otra imágen mía y volví a hacer uso de la
 
   </ion-content>
 ```  
-### [Tab3](https://github.com/diamarysrios/actividad_ionic_diamarys_rios/blob/documentacion/src/app/tab3)
+### [Tab3](/src/app/tab3)
 En este componente se encuentra la información de contacto.
 
-#### tab3.page.html
+#### [tab3/tab3.page.html](/src/app/tab3/tab3.page.html)
 ```html
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -261,7 +261,7 @@ En este componente se encuentra la información de contacto.
   </ion-content>
 </ion-content>
 ```
-#### tab3.module.ts
+#### [tab3/module.ts](/src/app/tab3/tab3.module.ts)
 Se importan y registran los módulos FormsModule, ReactiveFormsModule.
 
 ```ts
@@ -287,7 +287,7 @@ import { Tab3PageRoutingModule } from './tab3-routing.module';
 export class Tab3PageModule {}
 ```
 
-#### tab3.page.ts
+#### [tab3/tab3.page.ts](/src/app/tab3/tab3.page.ts)
 Se implementó la validación de formulario reactivo en Ionic. Por lo tanto, actualicé el código en el archivo tab3.page.ts necesario para que el formulario sea validado y procesado. De momento como muestra se abre una ventana de alerta mostrando los elementos del formulario además de mostrar mensajes de log en la consola del navegador para demostrar que el formulario está funcionando pero de momento no está conectado a un backend.
 
 ```ts
@@ -329,7 +329,7 @@ export class Tab3Page implements OnInit {
 ```
 
 # Archivos
-Los archivos de imágen quedaron almacenados [en la carpeta assets](https://github.com/diamarysrios/actividad_ionic_diamarys_rios/tree/documentacion/src/assets).
+Los archivos de imágen quedaron almacenados [en la carpeta assets](/src/assets/).
 
 --
 
