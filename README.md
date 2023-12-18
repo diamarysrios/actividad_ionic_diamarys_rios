@@ -3,7 +3,7 @@
 ## Actividad II Información de Contacto IONIC - Diamarys Rios V-20.589.352 
 ### Sección 1 Trayecto III
 
-En esta actividad actualizada en la pestaña de "Información de Contacto" con IONIC, luego de realizar las diversar validaciones, en la pestaña `tabs3`. Para esto se modificó el html de dicho componente para hacer uso de los formularios reactivos y así agregar las validaciones necesarias. La documentación completa y actualizada con esta actividad se encuentra en [este enlace](./Documentaci%C3%B3n.md))
+En esta actividad actualizada en la pestaña de "Información de Contacto" con IONIC, luego de realizar las diversar validaciones, en la pestaña `tabs3`. Para esto se modificó el html de dicho componente para hacer uso de los formularios reactivos y así agregar las validaciones necesarias. La documentación completa y actualizada con esta actividad se encuentra en [este enlace](./Documentaci%C3%B3n.md).
 
 ### [tab3/tab3.page.html](/src/app/tab3/tab3.page.html)
 ```html
