@@ -1,103 +1,77 @@
-
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Contacto</ion-title>
     </ion-toolbar>
-
   </ion-header>
-    <ion-content class="background">
-  <ion-row class="ion-justify-content-center ion-align-items-center">
+  <ion-content class="background">
+    <ion-row class="ion-justify-content-center ion-align-items-center">
+      <ion-col class="col-tarjeta-diama">
+        <ion-card class="ion-padding">
+          <ion-card-header>
+            <ion-card-title></ion-card-title>
+              <ion-text color="primary">Información de Contacto</ion-text>
+            </ion-card-title>
+          </ion-card-header>
 
-    <ion-col class="col-tarjeta-diama">
-
-      <ion-card class="ion-padding">
-        <ion-card-header>
-          <ion-card-title><ion-text color="primary">Información de Contacto</ion-text></ion-card-title>
-        </ion-card-header>
-        
-        <ion-row>
-          <ion-col size="auto">
-            <ion-avatar>
-              <img alt="Diamarys" src="/assets/diama2.jpeg" />
-            </ion-avatar>
-          </ion-col>
-          <ion-col>
-            <ion-label>Teléfono: 04127103505</ion-label>
+          <ion-row>
+            <ion-col size="auto">
+              <ion-avatar>
+                <img alt="Diamarys" src="/assets/diama2.jpeg" />
+              </ion-avatar>
+            </ion-col>
+            <ion-col>
+              <ion-label>Teléfono: 04127103505</ion-label>
               <p>Email: diamarysrios&#64;gmail.com</p>
               <p>Dirección: Caracas, La Candelaria</p>
 
               <!-- Propiedad del componete -->
-            <form [formGroup]='form' (ngSubmit)="Enviar()">
-
+              <form [formGroup]="form" (ngSubmit)="Enviar()">
                 <ion-list>
-                  <ion-item 
-                    class="error"
-                    *ngIf="formControls['nombre'].errors?.['required'] && (formControls['nombre'].dirty || formControls['nombre'].touched)"
-                  >
-                    <ion-text  color="danger">El nombre es requerido.</ion-text>
+                  <ion-item class="error"
+                    *ngIf="formControls['nombre'].errors?.['required'] && (formControls['nombre'].dirty || formControls['nombre'].touched)">
+                    <ion-text color="danger">El nombre es requerido.</ion-text>
                   </ion-item>
                   <ion-item>
-                    <ion-input label="Nombre"
-                    formControlName="nombre"
-                    type="text" 
-                    label-placement="floating" 
-                    fill="utline" 
-                    placeholder="Ingresar Nombre"></ion-input>
+                    <ion-input label="Nombre" formControlName="nombre" type="text" label-placement="floating"
+                      fill="utline" placeholder="Ingresar Nombre"></ion-input>
                   </ion-item>
-              
-                  <ion-item 
-                  class="error"
-                  *ngIf="formControls['telefono'].errors?.['required'] && (formControls['telefono'].dirty || formControls['telefono'].touched)"
-                >
-                  <ion-text  color="danger">El teléfono es requerido.</ion-text> 
-                </ion-item>
-                  <ion-item>
-                    <ion-input label="Teléfono" 
-                    formControlName="telefono"
-                    type="tel" 
-                    label-placement="floating"
-                    fill="utline" 
-                    placeholder="0000-888-8888"></ion-input>
+
+                  <ion-item class="error"
+                    *ngIf="formControls['telefono'].errors?.['required'] && (formControls['telefono'].dirty || formControls['telefono'].touched)">
+                    <ion-text color="danger">El teléfono es requerido.</ion-text>
                   </ion-item>
-              
-                  <ion-item 
-                  class="error"
-                  *ngIf="formControls['email'].errors?.['required'] && (formControls['email'].dirty || formControls['email'].touched)"
-                >
-                  <ion-text  color="danger">El Email es requerido.</ion-text> 
-                </ion-item>
                   <ion-item>
-                    <ion-input label="Email" 
-                    formControlName="email"
-                    type="email"  
-                    label-placement="floating"
-                    fill="utline" 
-                    placeholder="email@domain.com"></ion-input>
+                    <ion-input label="Teléfono" formControlName="telefono" type="tel" label-placement="floating"
+                      fill="utline" placeholder="0000-888-8888"></ion-input>
                   </ion-item>
-              
-                  <ion-item 
-                  class="error"
-                  *ngIf="formControls['mensaje'].errors?.['required'] && (formControls['mensaje'].dirty || formControls['mensaje'].touched)"
-                >
-                  <ion-text  color="danger">El Mensaje es requerido.</ion-text> 
-                </ion-item>
+
+                  <ion-item class="error"
+                    *ngIf="formControls['email'].errors?.['required'] && (formControls['email'].dirty || formControls['email'].touched)">
+                    <ion-text color="danger">El Email es requerido.</ion-text>
+                  </ion-item>
                   <ion-item>
-                    <ion-input label="Mensaje"
-                      formControlName="mensaje"
-                      type="text" 
-                      label-placement="floating"  
-                      fill="utline" 
-                      placeholder="Más Información">
+                    <ion-input label="Email" formControlName="email" type="email" label-placement="floating"
+                      fill="utline" placeholder="email@domain.com"></ion-input>
+                  </ion-item>
+
+                  <ion-item class="error"
+                    *ngIf="formControls['mensaje'].errors?.['required'] && (formControls['mensaje'].dirty || formControls['mensaje'].touched)">
+                    <ion-text color="danger">El Mensaje es requerido.</ion-text>
+                  </ion-item>
+                  <ion-item>
+                    <ion-input label="Mensaje" formControlName="mensaje" type="text" label-placement="floating"
+                      fill="utline" placeholder="Más Información">
                     </ion-input>
                   </ion-item>
                 </ion-list>
 
                 <ion-button type="submit" fill="outline">Enviar</ion-button>
-
-            </form>
-
-    </ion-col>
-  </ion-row>
-
-
+              </form>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-content>
+</ion-content>
